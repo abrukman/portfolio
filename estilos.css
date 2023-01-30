@@ -1,0 +1,203 @@
+:root {
+  --color-azul: #227c9d;
+  --color-verde: #17c3b2;
+  --color-amarillo: #ffcb77;
+  --color-blanco: #fef9ef;
+  --color-rojo: #fe6d73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4em;
+}
+
+header {
+  width: 100%;
+  background-color: var(--color-rojo);
+  position: fixed;
+  box-shadow: 0 2px 5px gray;
+}
+
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: .5em;
+  text-decoration: none;
+  color: var(--color-blanco); 
+  transition: background-color .25s ease-in-out;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  background-color: var(--color-azul);
+  
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  background-color: var(--color-verde);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  font-family: Bebas Neue, sans serif;
+}
+
+h1 { 
+  font-size: 3em;
+  color: var(--color-blanco);
+  text-shadow: 3px 3px 5px var(--color-azul);
+  margin-bottom: -0.2em
+}
+
+p {
+  font-family: Montserrat Alternates;
+}
+
+#welcome-section p:not(.subtitulo) {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1em;
+  color: var(--color-blanco);
+}
+
+.subtitulo {
+  font-size: 2em;
+  font-weight: 100;
+  color: var(--color-blanco);
+}
+
+#projects {
+  padding: 1em;
+  background-color: var(--color-amarillo);
+}
+
+h2 {
+  padding: 1em;
+  color: var(--color-azul);
+  text-align: center;
+}
+
+.project-wrap {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+iframe {
+  width: 200px;
+  height: auto;
+}
+
+#projects p {
+  padding: 1em;
+  text-align: center;
+  color: var(--color-azul);
+}
+
+p a {
+  font-size: 3em;
+  color: inherit;
+  display: block;
+  text-align: center;
+}
+
+
+#contacto {
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  padding: 1em;
+}
+
+#contacto p {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em;
+}
+
+.contact-list {
+  font-family: Montserrat Alternates;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.contact-list li {
+  list-style: none;
+}
+
+.contact-list li a {
+  display: block;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px gray;
+  color: var(--color-blanco);
+  transition: .1s ease-in-out;
+}
+
+.contact-list li a:hover {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 800px) {
+  #navbar ul {
+    justify-content: flex-end;
+  }
+
+  #navbar ul li {
+    width: unset;
+  }
+
+  #navbar ul li a {
+    padding: 1em;
+  }
+
+  .project-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
